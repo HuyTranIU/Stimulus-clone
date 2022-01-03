@@ -24,6 +24,51 @@
         width: 100%;
         margin-bottom: 0;
     }
+
+    .section-title {
+        padding: 40px 0 20px;
+    }
+
+    .block-haft, .skill-thumb  {
+        width: 100%;
+    }
+
+    .skill-thumb {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+
+    .bg-yellow, .bg-orange, .bg-dark, .bg-white  {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-thumb {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-thumb__form {
+        padding: 20px 40px 140px 40px;
+        width: 100%;
+    }
+
+    .skill-thumb.contact-skill-thumb.block-haft {
+        position: relative;
+        display: flex;
+    }
+    
+    .contact-skill-thumb__img {
+        width: 50%;
+    }
+
+    .contact-thumb__info {
+        width: 50%;
+        padding-bottom: 160px;
+    }
+
 }
 
 @media (min-width: 740px) {

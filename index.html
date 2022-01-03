@@ -27,8 +27,34 @@
         <div class="navbar-header">
             <a href="#">Stimtlus</a>
         </div>
-        <div>
+        <!-- Nav-moblie -->
+        <label for="nav-input">
             <i class="navbar-toggle fas fa-bars"></i>
+        </label>
+
+        <input type="checkbox" hidden id="nav-input" class="nav-input__mobile">
+
+        <div class="nav-mobile">
+            <label for="nav-input" class="navbar-toggle__close">
+                <i class="navbar-toggle fas fa-times"></i>
+            </label>
+            <ul class="nav-mobile__menu">
+                <a href="" class="nav-mobile__menu_link">
+                    <li class="active">Home</li>
+                </a>
+                <a href="" class="nav-mobile__menu_link">
+                    <li class="active">About me</li>
+                </a>
+                <a href="" class="nav-mobile__menu_link">
+                    <li class="active">Experiences</li>
+                </a>
+                <a href="" class="nav-mobile__menu_link">
+                    <li class="active">Testimonial</li>
+                </a>
+                <a href="" class="nav-mobile__menu_link">
+                    <li class="active">Contact</li>
+                </a>
+            </ul>
         </div>
 
         <div class="navbar-collapse">
@@ -267,8 +293,8 @@
 
             </div>
 
-            <div class="skill-thumb block-haft">
-                <img src="asset/img/contact-img.jpg" alt="" class="skill-thumb__img block-haft"></img>
+            <div class="skill-thumb contact-skill-thumb block-haft">
+                <img src="asset/img/contact-img.jpg" alt="" class="skill-thumb__img contact-skill-thumb__img block-haft"></img>
                 <div class="contact-thumb__info bg-dark">
                     <div class="contact-thumb__info--header">
                         <h3 class="text-bg">Visit my office</h3>
