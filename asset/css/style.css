@@ -1,8 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 15px 0;
+    padding: 6px 0;
     z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
 }
 
 .navbar-header a{
@@ -60,7 +65,7 @@
 
 .active {
     font-size: 1.8rem;
-    padding: 15px;
+    padding: 10px;
     color: var(--text-black);
     transition: ease-in 0.4s;
 }
