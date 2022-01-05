@@ -10,15 +10,12 @@
     --text-color: #888;
 }
 
-body {
-   
-}
-
 * {
     box-sizing: inherit;
 }
 
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%;
     line-height: 1.6rem;
