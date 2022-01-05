@@ -36,6 +36,10 @@
     opacity: 1;
 }
 
+.nav-moblie__icon {
+    display: none;
+}
+
 .nav-mobile__menu {
     list-style: none;
     padding: 0;
@@ -124,7 +128,7 @@
     display: block;
     position: relative;
     margin: 0 40px;
-    padding: 14px 0 60px 0;
+    padding: 20px 0 60px 0;
 }
 
 .about-thumb p:nth-child(2) {
@@ -140,11 +144,6 @@
 .skill-thumb__img {
     object-fit: cover;
     height: auto;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
 }
 
 .skill-thumb__info {
@@ -195,6 +194,7 @@
 .service-thumb__heading {
     font-size: 2.8rem;
     font-weight: 200;
+    line-height: 2.8rem;
     letter-spacing: 0.4px;
 }
 
@@ -355,7 +355,7 @@
 }
 
 .contact-thumb__info {
-    width: 100%;
+    width: 50%;
 }
 
 .contact-info__link {
@@ -365,7 +365,7 @@
     line-height: 2rem;
     text-decoration: none;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 24px;
     color: var(--text-color);
 }
 

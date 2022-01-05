@@ -15,20 +15,20 @@
     <link rel="stylesheet" href="/asset/css/base.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/reponsive.css">
+    <link rel="stylesheet" href="asset/css/animate.css">
+    <script src="asset/css/wow.js"></script>
     <title>Stimulusclone</title>
 </head>
 
 <body>
-    <script>
-        const a = document.querySelector('#home')
-    </script>
+    
     <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-header">
             <a href="#">Stimtlus</a>
         </div>
         <!-- Nav-moblie -->
-        <label for="nav-input">
+        <label for="nav-input" class="nav-moblie__icon">
             <i class="navbar-toggle fas fa-bars"></i>
         </label>
 
@@ -39,7 +39,7 @@
                 <i class="navbar-toggle fas fa-times"></i>
             </label>
             <ul class="nav-mobile__menu">
-                <a href="" class="nav-mobile__menu_link">
+                <a href="#home" class="nav-mobile__menu_link">
                     <li class="active">Home</li>
                 </a>
                 <a href="" class="nav-mobile__menu_link">
@@ -85,7 +85,7 @@
             <img src="asset/img/home-img.jpg" alt="home">
         </div>
         <div class="home-thumb block-haft">
-            <div class="section-title">
+            <div class="section-title wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <h4 class="section-title--sm">Welcome to website</h4>
                 <h1 class="section-title--big">Hello, I am
                     <strong>Stimulus</strong>
@@ -103,8 +103,8 @@
     <!-- about -->
     <section id="about" class="parallax-section">
 
-        <div class="block-haft">
-            <div class="about-thumb">
+        <div class="about-item block-haft">
+            <div class="about-thumb wow bounceInUp"  data-wow-duration="2s" data-wow-delay="0.4s">
                 <h1 class="section-title--big">Donec auctor</h1>
                 <p class="text-sm">Sed vulputate vitae diam quis bibendum</p>
                 <p class="text-sm">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante.
@@ -119,7 +119,7 @@
 
         <div class="skill-thumb block-haft">
             <img src="asset/img/about-img.jpg" alt="" class="skill-thumb__img block-haft"></img>
-            <div class="skill-thumb__info block-haft">
+            <div class="skill-thumb__info block-haft wow bounceInUp"  data-wow-duration="2s" data-wow-delay="0.4s">
 
                 <h1 class="text-bg">My Skills</h1>
                 <p class="white-color">Photoshop . HTML CSS JS . Web Design</p>
@@ -153,33 +153,33 @@
     </section>
 
     <!-- service -->
-    <section id="service" class="parallax-section">
-        <div class="bg-yellow block-quarter">
-            <div class="service-thumb">
+    <section id="service" class="service-list parallax-section">
+        <div class="bg-yellow block-quarter block-haft__tab">
+            <div class="service-thumb wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <i class="service-thumb__icon fas fa-desktop"></i>
                 <h3 class="service-thumb__heading white-color">Interface Design</h3>
                 <p class="service-thumb__info white-color">Phasellus vulputate tellus nec tortor varius elementum.
                     Curabitur at pulvinar ante.</p>
             </div>
         </div>
-        <div class="bg-orange block-quarter">
-            <div class="service-thumb">
+        <div class="bg-orange block-quarter block-haft__tab">
+            <div class="service-thumb wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <i class="service-thumb__icon fas fa-desktop"></i>
                 <h3 class="service-thumb__heading white-color">Media Strategyn</h3>
                 <p class="service-thumb__info white-color">Curabitur at pulvinar ante. Duis dui urna, faucibus eget
                     felis eu, iaculis congue sem.</p>
             </div>
         </div>
-        <div class="bg-dark block-quarter">
-            <div class="service-thumb">
+        <div class="bg-dark block-quarter block-haft__tab">
+            <div class="service-thumb wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <i class="service-thumb__icon fas fa-desktop"></i>
                 <h3 class="service-thumb__heading white-color">Mobile App</h3>
                 <p class="service-thumb__info white-color">Mauris convallis eros massa, vitae euismod arcu tempus ut.
                     Quisque viverra iaculis.</p>
             </div>
         </div>
-        <div class="bg-white block-quarter">
-            <div class="service-thumb">
+        <div class="bg-white block-quarter block-haft__tab">
+            <div class="service-thumb wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <i class="service-thumb__icon fas fa-desktop"></i>
                 <h3 class="service-thumb__heading text-color">Coding</h3>
                 <p class="service-thumb__info text-color">Mauris convallis eros massa, vitae euismod arcu tempus ut.
@@ -196,7 +196,7 @@
         </div>
 
         <div class="experience-thumb block-haft">
-            <div class="experience-thumb__about">
+            <div class="experience-thumb__about wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <h1 class="text-bg">My Experiences</h1>
                 <p class="white-color">Previous companies and my tasks</p>
                 <div class="experience-thumb__media">
@@ -231,7 +231,7 @@
     <section id="education" class="parallax-section">
 
         <div class="experience-thumb block-haft">
-            <div class="experience-thumb__about">
+            <div class="experience-thumb__about wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <h1 class="text-bg">My Education</h1>
                 <p class="white-color">In cursus orci non ipsum gravida dignissim</p>
                 <div class="experience-thumb__media">
@@ -267,7 +267,7 @@
     <!-- quotes -->
     <section id="quotes" class="parallax-section">
         <div class="overlay"></div>
-        <div class="quotes-about">
+        <div class="quotes-about wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
             <i class="quotes-about__icon fas fa-star "></i>
             <h2 class="quotes-about__heading">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in
                 vestibulum quis, auctor et orci.</h2>
@@ -280,7 +280,7 @@
     <section id="contact" class="parallax-section">
 
         <div class="contact-thumb">
-            <div class="contact-thumb__form">
+            <div class="contact-thumb__form wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <h1 class="text-bg">Say hello..</h1>
                 <p class="white-color">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
                 <form class="contact-thumb__input" action="">
@@ -297,10 +297,10 @@
                 <img src="asset/img/contact-img.jpg" alt="" class="skill-thumb__img contact-skill-thumb__img block-haft"></img>
                 <div class="contact-thumb__info bg-dark">
                     <div class="contact-thumb__info--header">
-                        <h3 class="text-bg">Visit my office</h3>
-                        <p class="white-color">456 New Street 22000, New York City, USA</p>
+                        <h3 class="text-bg wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">Visit my office</h3>
+                        <p class="white-color wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">456 New Street 22000, New York City, USA</p>
                     </div>
-                    <div class="contact-info">
+                    <div class="contact-info wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                         <h3 class="contact-info-heading text-bg">Contact.</h3>
                         <a href="" class="contact-info__link">
                             <i class="fas fa-phone-alt"></i>
@@ -324,8 +324,8 @@
 
     <footer>
         <div class="footer-about">
-            <p>Copyright © 2016 Your Company | Design: <a href="">templatemo</a></p>
-            <ul class="social-icon">
+            <p class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">Copyright © 2016 Your Company | Design: <a href="">templatemo</a></p>
+            <ul class="social-icon wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                 <li>
                     <a href="" class="social-icon__link">
                         <i class="fab fa-facebook-f"></i>
@@ -354,6 +354,21 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        new WOW().init();
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            document.querySelector(".navbar").style.backgroundColor = "#ffffff";
+          } else {
+            document.querySelector(".navbar").style.backgroundColor = "transparent";
+          }
+        }
+        </script>
+        
 </body>
 
 </html>
